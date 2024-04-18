@@ -11,8 +11,12 @@
             "id": "28044c23fe6a7be6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Var, Let and Const.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "JavaScript/Var, Let and Const.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "JavaScript/Var, Let and Const.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "JavaScript/Var, Let and Const.md"
+              }
             }
           }
         ]
@@ -139,5 +147,9 @@
     }
   },
   "active": "28044c23fe6a7be6",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "anything/Binary Search Tree in JavaScript.md",
+    "anything",
+    "noting"
+  ]
 }
