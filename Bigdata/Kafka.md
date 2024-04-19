@@ -55,6 +55,7 @@ Many use case for **publish/subscribe** start out the same way: with a simple **
 - retain at least the last known value for each message key within the log of data for a single topic partition.
 - Logs are **immutable** ( No deletes!! )
 - Topics are **Durable**
+- Topic == orders
 - Configure life time of events, by Time Period, or size of log
 - Any changes ( updates, deletes, etc) => A new Event is created and appended to the Log
 
