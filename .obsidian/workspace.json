@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bigdata/Flink.md",
+                "file": "Bigdata/Hadoop.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bdd05e854eb712d4",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bigdata/Flink.md",
+                "file": "Bigdata/Hadoop.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bigdata/Flink.md",
+                "file": "Bigdata/Hadoop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bigdata/Flink.md"
+                "file": "Bigdata/Hadoop.md"
               }
             }
           }
@@ -149,7 +148,9 @@
   },
   "active": "28044c23fe6a7be6",
   "lastOpenFiles": [
+    "Bigdata/Spark.md",
     "Bigdata/Kafka.md",
+    "Bigdata/Hadoop.md",
     "Bigdata/Flink.md",
     "Untitled.canvas",
     "Untitled 1.canvas",

@@ -1,3 +1,6 @@
+# Hadoop
+-------
+
 ### **What is Big Data**
 - Big data is when the size of the data itself becomes part of the problem
 - Not every company will benefit from Big Data, it depends on your size and your ability
