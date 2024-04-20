@@ -20,7 +20,7 @@
 - **Directed Acyclic Graph (DAG)** and **Query Optimizer** => decompose into tasks that can be executed in parallel
 - **Physical Execution Engine (Tungsten)**, generates and executes compact code
 
-**Modularity
+**Modularity**
 
 **Ease of Use**
 - **Abstraction using Logical data structure, Resilient Distributed Dataset (RDD)** -> upon which higher level abstractions such as Dataframes and Datasets are constructed
