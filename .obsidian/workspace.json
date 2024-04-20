@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bigdata/Hadoop.md",
+                "file": "Bigdata/Spark.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bdd05e854eb712d4",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bigdata/Hadoop.md",
+                "file": "Bigdata/Spark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bigdata/Hadoop.md",
+                "file": "Bigdata/Spark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bigdata/Hadoop.md"
+                "file": "Bigdata/Spark.md"
               }
             }
           }
@@ -146,13 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28044c23fe6a7be6",
+  "active": "3eb1e89ff36986b2",
   "lastOpenFiles": [
-    "Bigdata/Spark.md",
     "Bigdata/Kafka.md",
     "Bigdata/Hadoop.md",
     "Bigdata/Flink.md",
     "Untitled.canvas",
+    "Bigdata/Spark.md",
     "Untitled 1.canvas",
     "JavaScript/Var, Let and Const.md",
     "anything/Binary Search Tree in JavaScript.md",

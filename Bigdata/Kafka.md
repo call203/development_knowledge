@@ -1,5 +1,4 @@
 # Kafka
----------
 
 - publish-subscribe messaging rethought as a distributed commit log
 - Apache Kafka is an ==**event streaming platform**== used to collect, process, store, and integrate data at scale. 

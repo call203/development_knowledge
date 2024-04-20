@@ -1,5 +1,4 @@
 # Hadoop
--------
 
 ### **What is Big Data**
 - Big data is when the size of the data itself becomes part of the problem

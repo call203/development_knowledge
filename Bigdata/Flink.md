@@ -1,5 +1,4 @@
 # Flink
----------- 
 
 Apache Flink is an open-source, **unified stream-processing and batch-processing framework** developed by the Apache Software Foundation.
 ( written in Java and Scala)
