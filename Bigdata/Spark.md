@@ -34,6 +34,7 @@
 
 ### Spark Execution
 Spark Program consists of . . . 
+
 **Driver Program** 
  - responsible for orchestrating parallel operations on the Spark cluster
 **Accesses the distributed components in cluster** 
@@ -44,10 +45,10 @@ Spark Program consists of . . .
 #### Spark Driver 
 - Driver converts Spark into one or more jobs
 - Each Job is transformed in a **DAG**
-##### Spark Stage
+#### Spark Stage
 - Stages are created **based on operations** that can be performed **Serially or in Parallel**
 - Not all operations can happen in a single stage => divide into **multiple stages**
-##### Spark Tasks
+#### Spark Tasks
 - **Each Stage** is comprised of **Task** - a unit of execution
 - These are **distributed across** each Spark executor
 - Each Task maps to a single core and works on a single partition of data
