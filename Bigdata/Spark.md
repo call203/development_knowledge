@@ -78,6 +78,7 @@ Spark Program consists of . . .
 
 
 ### Resilient Distributed Dataset (RDD)  ******! important
+A fault-tolerant collection of elements that can be operated on in parallel
 - **Resilient** : if the data is lost, it can be recreated for previous steps
 - **Distributed** : appears as a single chunk of code, but is actually distributed across nodes
 - **Dataset** : initial data can come from file or created programmatically
@@ -86,6 +87,16 @@ Spark Program consists of . . .
 - RDDs represent data or transformations
 - This is best suited for application that apply the same operation to all elements of a dataset
 - Superseded by DataFrames
+- JVM Objects
+- Distributed over a cluster of machines
+- Immutable representation of data
+- Operations (Transformations and Actions) on one RDD creates a new one
+- Memory caching layer that stores data in a distributed, fault-tolerant cache
+- Created by parallel transformations on data in stable storage
+- Lazy materialization
+- Transformations are lazy (not computed immediately) the transformed RDD gets
+  recomputed when an action is run on it (default)
+- RDDs are not suitable for everyone or for all data processing => Convert to a Dataframe
 ### Limitations of RDD
 - There is no built-in optimization engine in RDD.
 -  RDD cannot handle structured data.
@@ -111,3 +122,51 @@ Spark Program consists of . . .
 - Can combine Spark SQL with the other DSL
 - Supports (a subset)of ANSI SQL
 - Connect with other data software such as Tableau, Snowflake, and Power BI using JDBC/ODBC connectors
+
+
+### Spark- Machine Learning 
+
+*A lot of ML / AI / .... consists of defining/finding rules that exist in the data and business
+
+#### Functionality 
+-  Pre-processing your data (cleaning data and feature engineering)
+- Supervised learning
+- Recommendation learning
+- Unsupervised engines
+-  Graph analytics
+- Deep learning
+#### Typical Process
+1. **Gathering and collecting** the relevant data for your task.
+2. **Cleaning** and inspecting the data to better understand it
+3. **Performing feature engineering** to allow the algorithm to leverage the data in a suitable form
+4. Using a portion of this data as a training set to **train one** or more algorithms to generate some candidate models
+5. **Evaluating and comparing models** against your success criteria by objectively measuring results on a subset of the same data that was not used for training. This allows you to better understand how your model may perform in the wild.
+6. **Leveraging the insights** from the above process and/or using the model to make predictions, detect anomalies, or solve more general business challenges.
+
+#### spark.mlib vs spark.ml
+- MLib is general term used for machine learning Spark library
+- **Spark.mllib** 
+  the original ML API based on RDD API. Has been in maintenance mode since Spark 2
+-  **Spark.ml**
+   ML API based on dataframes – Recommended to use this going forward
+   (Very similar/same as Python scikit-learn)
+
+
+### Spark Advantages
+- Continuous Delivery of Data = Current picture of Data
+- **Streaming data** can be consumed from multiple sources — Kafka, Kinesis, Flume etc
+- **Fault tolerant and fast** recovery from failures in case of any breakdown
+- Better **load balancing** with optimized resource utilization
+- Combining of live streaming data with **static datasets**
+- **Interactive SQL** operations can be performed on live streaming data
+- **Machine learning & Graph processing techniques** can be applied to live streaming data
+
+### Spark Streaming
+Spark Streaming introduced the idea of micro-batch stream processing, where the streaming computation is modelled as a continuous series of small, map/reduce-style batch processing jobs (hence, “micro-batches”) on small chunks of the stream data.
+
+- Batches are called DStream (Discretized Streams)
+- DStreams are represented as RDDs
+- Similar to that of RDDs, transformations allow the data from the input DStream to be modified.
+- DStreams support many of the transformations available on normal Spark RDD's
+- Spark streaming provides **windowed computations**, which allow you to apply transformations over a sliding window of data.
+	Every time the window slides over a source DStream, the source RDDs that fall within the window are combined and operated upon to produce the RDDs of the windowed DStream.

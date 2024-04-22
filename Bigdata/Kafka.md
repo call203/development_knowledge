@@ -9,7 +9,7 @@
 
 
 ### Background
-#### Traditional system
+
 Many use case for **publish/subscribe** start out the same way: with a simple **message queue** or inter-process communication channel. 
 - so the application that needs to send monitoring information somewhere, so you open a direct connection from your application to an app that displays your metrics on a dashboard, and push metrics over that connection.
 #### Traditional Architecture
@@ -54,12 +54,13 @@ Many use case for **publish/subscribe** start out the same way: with a simple **
 - **Kafka Connect** - Predefined interfaces/APIs to connect to existing applications to Kafka. Avoids duplication of code. 
 
 ### Event and Log/Topics
-- retain at least the last known value for each message key within the log of data for a single topic partition.
+- Retain at least the last known value for each message key within the log of data for a single topic partition.
 - Logs are **immutable** ( No deletes!! )
 - Topics are **Durable**
 - Topic == orders
 - Configure life time of events, by Time Period, or size of log
 - Any changes ( updates, deletes, etc) => A new Event is created and appended to the Log
+
 
 ### Event
 - Something has happened
@@ -82,7 +83,6 @@ Many use case for **publish/subscribe** start out the same way: with a simple **
 - Brokers also handle replication of partitions between each other.
 
 ### How it Works – Topic Offset
-
 - Consumer will start with Event=0
 - Offset will progress to next Event
 - One by One
@@ -97,7 +97,7 @@ Many use case for **publish/subscribe** start out the same way: with a simple **
 - Topics help you to organise events and how these topics can be used
 - Create different Topics for different types of events - Multiple Topics
 - Can duplicate data across Topics
-	-Depend on the use ( Some events might require specific actions
+	-Depend on the use ( Some events might require specific actions )
 	-Same event sent to different Topics
 - Example : Order Event topic / Product Events Topic / User Events Topic ... 
 
@@ -112,6 +112,14 @@ Many use case for **publish/subscribe** start out the same way: with a simple **
 - How are messages allocated to a Partition
 	-All partitions will get an event share of the data/events
 	-When a key<k,v> exists, the destination partition is computed from a hash of the key.  This allows Kafka to guarantee that messages having the same key always land in the same partition, and therefore are always in order.
+- Multiple Partitions -> No key
+	-Allocated in round-robin
+	-Consumers Event can be read out-of-sequence, from how they were created
+	-Ordering within partitions is gauranteed
+- Multiple Partitions -> With key
+	-Mod on Key
+	-Guarantees each Key will be allocated to same partition
+	-Ordering within partitions is guaranteed
 
 ### Multiple Consumers & Consumer Groups
 - A **Consumer Group,** consists of one or more Consumers that work together to consume a **Topic**
