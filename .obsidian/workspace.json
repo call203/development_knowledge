@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bigdata/Spark.md",
+                "file": "Bigdata/MapReduce.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bigdata/Spark.md",
+                "file": "Bigdata/MapReduce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bigdata/Spark.md",
+                "file": "Bigdata/MapReduce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bigdata/Spark.md"
+                "file": "Bigdata/MapReduce.md"
               }
             }
           }
@@ -150,9 +150,10 @@
   "active": "28044c23fe6a7be6",
   "lastOpenFiles": [
     "Bigdata/Kafka.md",
-    "Bigdata/Spark.md",
     "Bigdata/Hadoop.md",
+    "Bigdata/MapReduce.md",
     "Bigdata/Flink.md",
+    "Bigdata/Spark.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "JavaScript/Var, Let and Const.md",
