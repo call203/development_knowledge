@@ -3,7 +3,7 @@
 - purpose processing engine that can be used **instead of MapReduce**
 - **Spark SQL**
 - **Spark Streaming** - stream processing of live data streams
-- **MLlib** - machine learning - ]spark.mllib and spark.ml (for dataframes)
+- **MLlib** - machine learning - spark.mllib and spark.ml (for dataframes)
 - **GraphX** - graph manipulation
 - **extends Spark RDD** with Graph abstraction: a directed multigraph with properties attached to each vertex and edge.
 - **Spark API** providing interface for programming clusters with implicit **data parallelism** and **fault tolerance.**
